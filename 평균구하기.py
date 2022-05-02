@@ -7,5 +7,5 @@
 # arr의 element들의 합 / element의 개수
 
 arr = [1,2,3,4]
-# def solution(arr) : 
-#     print(sum(arr) / len(arr))
+def solution(arr) : 
+    print(sum(arr) / len(arr))
