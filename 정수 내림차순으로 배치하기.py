@@ -4,13 +4,9 @@
 
 n = 118372
 
-# a = list(str(n))
-# a.sort(reverse=True)
-# print(int("".join(a)))
-
 # 1. 문자열
 # 2. 리스트화
-# 3. 내림차순 
+# 3. 정렬 및 내림차순 
 # 4. join 함수 사용 
 # 5. int로 변환 (return 값이 int이기 때문)
 
@@ -25,12 +21,10 @@ n = 118372
 #         print(a)
 #     return result    
 
-a = list(str(n))
-a.sort(reverse=True)
-print("".join(a))
 
 def solution(n):
     list_n = list(str(n))
     list_n.sort(reverse=True)
-    print("".join(list_n)) 
+    answer = "".join(list_n)
+    return int(answer) 
     
