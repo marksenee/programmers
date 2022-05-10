@@ -3,36 +3,19 @@
 # 예를들어 n이 118372면 873211을 리턴하면 됩니다.
 
 n = 118372
-# n을 str로 변환
-# n을 리스트에 담기
-# 리스트에 담긴 n을 정렬시키기 
-# 정렬된 n을 reversed 시키기 
-# 문자열로 반환 시키기 => join
 
-a = list(str(n))
-a.sort(reverse=True)
-print(int("".join(a)))
-# array.append(int(n))
-# # print(array)
-# array.sort(reverse=True)
-# print(array)
+# a = list(str(n))
+# a.sort(reverse=True)
+# print(int("".join(a)))
+
+# 1. 문자열
+# 2. 리스트화
+# 3. 내림차순 
+# 4. join 함수 사용 
+# 5. int로 변환 (return 값이 int이기 때문)
 
 
-# ls = list(str(int(n)))
-# print(ls)
-# ls.sort(reverse = True)
-# print(int("".join(ls)))
-
-# for i in str(n):
-#     array.append(int(i))
-#     array.sort(reverse=True)
-#     # print(array)
-#     result = int("".join(array))   
-#     print(result)
-#     # a = int(result)
-#     # print(a)
-
-
+# 첫번째 풀이 -> 코드는 돌아가지만 프로그래머스상 오답 
 # def solution(n) : 
 #     for i in str(n):
 #         array.append(int(i))
@@ -41,3 +24,13 @@ print(int("".join(a)))
 #         a = int(result)
 #         print(a)
 #     return result    
+
+a = list(str(n))
+a.sort(reverse=True)
+print("".join(a))
+
+def solution(n):
+    list_n = list(str(n))
+    list_n.sort(reverse=True)
+    print("".join(list_n)) 
+    
