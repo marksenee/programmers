@@ -38,3 +38,7 @@ def solution(s) :
     
 solution("a2345")
 
+# 다른 좋은 풀이
+# s에 숫자가 있고, len(s) 가 (4,6)에 속해있는지 확인 
+def alpha_string46(s):
+    return s.isdigit() and len(s) in (4, 6)
