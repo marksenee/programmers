@@ -61,15 +61,18 @@ function solution (s) {
 // 풀이2
 function solution (s) {
     let arr = Array.from(s) // 문자열 쪼개서 arr에 원소 하나씩 담기 
+    console.log(arr)
     let p_array = []; 
     let y_array = [];
 
-    for (let answer of arr) {
-        console.log(answer)
-        if(answer == 'p' || answer == 'P') {
-            p_array.push(answer)
+    for (let answer of arr) {  
+        console.log(answer) // P, y, y
+        if(answer == 'p' || answer == 'P') { // (or -> ||), (and -> &&)
+            p_array.push(answer) 
+            console.log(p_array)
         } else if (answer == 'y' || answer == 'Y') {
             y_array.push(answer)
+            console.log(y_array)
         }
     }
     // p가 담긴 원소의 개수와 y가 담긴 원소에 개수를 비교
@@ -80,4 +83,4 @@ function solution (s) {
     }
 }
 
-console.log(solution("Pyy"))
+console.log(solution("pPoooyY"))
