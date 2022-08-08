@@ -27,6 +27,7 @@ s에 'p'의 개수와 'y'의 개수를 비교해 같으면 True,
 4) push 함수 
  **/
 
+// 풀이1
 function solution (s) {
     let arr = Array.from(s) // 문자열 쪼개서 arr에 원소 하나씩 담기 
     let p_array = []; 
@@ -57,6 +58,26 @@ function solution (s) {
 
 }
 
+// 풀이2
+function solution (s) {
+    let arr = Array.from(s) // 문자열 쪼개서 arr에 원소 하나씩 담기 
+    let p_array = []; 
+    let y_array = [];
+
+    for (let answer of arr) {
+        console.log(answer)
+        if(answer == 'p' || answer == 'P') {
+            p_array.push(answer)
+        } else if (answer == 'y' || answer == 'Y') {
+            y_array.push(answer)
+        }
+    }
+    // p가 담긴 원소의 개수와 y가 담긴 원소에 개수를 비교
+    if (p_array.length == y_array.length) {
+        return true // 원소의 개수가 서로 같으면 true
+    } else {
+        return false // 서로 다르면 false
+    }
+}
 
 console.log(solution("Pyy"))
-
