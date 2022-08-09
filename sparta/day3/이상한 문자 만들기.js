@@ -5,8 +5,9 @@ function solution(s) {
     
     // 1. for문으로 result에 담긴 각 원소의 인덱스 찾기 
     for (let i = 0; i < result.length; i++) { // i = 0,1,2 
-        for(let j = 0; j < result[i].length; j++) { // j = t,r,y,h,e,l,l,o,w,o,r,l,d
+        for(let j = 0; j < result[i].length; j++) { // j = t,r,y, h,e,l,l,o, w,o,r,l,d
             // 2. 각 단어의 인덱스의 짝수 판별 후 대문자 변환
+            // console.log(j)
             if(j % 2 === 0) {
                 answer += result[i][j].toUpperCase();
             // 3. 각 단어의 인덱스의 홀수 판별 후 소문자 변환 
