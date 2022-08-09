@@ -27,10 +27,12 @@ function solution(participant, completion) {
     completion.sort()
 
     for (let i = 0; i < participant.length; i++) {
+        
         console.log("참여자", participant[i])
         console.log("완주자", completion[i])
+
         if (participant[i] !== completion[i]) {
-            return participant[i]
+            return participant[i];
         }
     }
 }
