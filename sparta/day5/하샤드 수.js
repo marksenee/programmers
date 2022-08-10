@@ -57,3 +57,10 @@ function solution(x) {
 let arr = 13;
 console.log(solution(arr))
 
+
+var a = 0;
+console.log(typeof arr)
+var s = (arr+"").split("").map(Number)
+console.log(typeof s)
+
+console.log(s)
