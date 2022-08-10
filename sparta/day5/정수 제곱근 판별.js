@@ -15,20 +15,20 @@ n이 양의 정수 x의 제곱이 아니라면 -1을 리턴하는 함수를 완�
 
  **/
 
-// function solution(n) {
-//     let answer = Math.sqrt(n)
-//     let result = 0;
+function solution(n) {
+    let answer = Math.sqrt(n)
+    let result = 0;
     
-//     // 반환한 제곱근이 정수인지 판별 
-//     if (Number.isInteger(answer) == true) {
-//         // 정수일 경우 제곱근의 +1한 값의 제곱을 리턴
-//         result = (answer+1)**2;
-//         return result;
-//     } else {
-//         // 제곱근도 없고 정수도 아닐 경우 -1 리턴 
-//         return result = -1;
-//     }
-// }
+    // 반환한 제곱근이 정수인지 판별 
+    if (Number.isInteger(answer) == true) {
+        // 정수일 경우 제곱근의 +1한 값의 제곱을 리턴
+        result = (answer+1)**2;
+        return result;
+    } else {
+        // 제곱근도 없고 정수도 아닐 경우 -1 리턴 
+        return result = -1;
+    }
+}
 
 function solution(n) {
     let answer = Math.sqrt(n)
