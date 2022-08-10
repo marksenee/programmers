@@ -26,14 +26,23 @@
             n = (n*3)+1; // (n*3)+1한 값을 n에 담아줌 
         }
         cnt += 1; // 카운트를 세서 while문이 돌 때마다 1씩 올려줌
-
-        if (cnt >= 500) {
-            return -1;
-        } else {
-            return cnt;
-        }
      }
+     if (cnt >= 500) {
+        return -1;
+    } else {
+        return cnt;
+    }
  }
+
+ // 다른 풀이 
+ function collatz(num) {
+    var answer = 0;
+    while(num !=1 && answer !=500){
+        num%2==0 ? num = num/2 : num = num*3 +1;
+    answer++;
+  }
+    return num == 1 ? answer : -1;
+}
 
  let n = 626331;
  console.log(solution(n))
