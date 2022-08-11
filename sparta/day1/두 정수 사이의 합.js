@@ -5,3 +5,21 @@
 
  
  **/
+
+ function solution(a, b) {
+    var answer = 0;
+    var min = Math.min(a, b);
+    var max = Math.max(a, b);
+    for(var i=min; i <= max; i++){
+        console.log(i)
+        answer+=i;
+    }
+    return answer;
+}
+
+ let a = 3;
+ let b = 5;
+ let n = 0;
+ console.log(solution(a,b))
+
+ // https://sururu.tistory.com/139

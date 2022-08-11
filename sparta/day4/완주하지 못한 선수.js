@@ -21,6 +21,8 @@ return = ["leo"]
 - 동명이인 처리 
  **/
 
+
+
 function solution(participant, completion) {
     // 정렬
     participant.sort()

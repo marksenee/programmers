@@ -16,10 +16,12 @@ function solution(s) {
             }
         }
         // 4. result.length -1 (2) 인덱스가 2(world) 보다 작은 0,1은 공백 추가
-        if (i < result.length -1) {
-            answer += ' ';
-        }
+        // if (i < result.length -1) {
+        //     answer += ' ';
+        // }
     }
+    console.log(answer);
+
     return answer;
 }
 let s = "try hello world"
